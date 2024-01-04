@@ -1,0 +1,88 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop for Sale</title>
+    <link rel="stylesheet" href="{% static 'Lightbox/lightbox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+
+<header>
+    <h1>Laptop for Sale</h1>
+</header>
+
+<div class="container">
+    <h2>Specifications</h2>
+    <ul>
+        <li class="specification">Model: Inspiron 15-3573</li>
+        <li class="specification">RAM: 4GB</li>
+        <li class="specification">CPU: Intel Celeron N4000</li>
+        <li class="specification">Graphics: Intel Gemini Lake [UHD Graphics 600]</li>
+        <li class="specification">Display: 15.6-inch HD (1366x768) </li>
+        <li class="specification">Storage: 500GB SSD</li>
+        <li class="specification">Camera: Integrated widescreen HD (720p) Webcam</li>
+    </ul>
+    <h2>Included Items</h2>
+    <ul>
+        <li class="specification"> Original Charger </li>
+        <li class="specification"> Laptop Bag </li>
+    </ul>
+
+
+    <h2>Location</h2>
+    <ul>
+        <li class="specification">
+            <a href="https://www.google.com/maps/search/tahanang+yaman+homes+general+trias+cavite/@14.3231211,120.8965682,15z/data=!3m1!4b1?entry=ttu">
+                Tahanang Yaman General Trias Cavite
+            </a>
+        </li>
+    </ul>
+
+    <h2>Price</h2>
+    <ul>
+        <li class="specification"> P5000.00 </li>
+    </ul>
+
+    <h2 class="contact-info">Contact Information</h2>
+    <p class="contact-info">For more information or to make an offer, kindly send me a private message <a href="https://www.facebook.com/francisaigo.miradora">here</p>
+
+    <div class="image-gallery">
+        <a href="{% static 'Images/1.jpg' %}" data-lightbox="gallery" data-title="Image 1">
+            <img class="gallery-image" src="{% static 'Images/1.jpg' %}" alt="Image 1">
+        </a>
+
+        <a href="{% static 'Images/2.jpg' %}" data-lightbox="gallery" data-title="Image 2">
+            <img class="gallery-image" src="{% static 'Images/2.jpg' %}" alt="Image 2">
+        </a>
+
+        <a href="{% static 'Images/3.jpg' %}" data-lightbox="gallery" data-title="Image 3">
+            <img class="gallery-image" src="{% static 'Images/3.jpg' %}" alt="Image 3">
+        </a>
+
+        <a href="{% static 'Images/4.jpg' %}" data-lightbox="gallery" data-title="Image 4">
+            <img class="gallery-image" src="{% static 'Images/4.jpg' %}" alt="Image 4">
+        </a>
+
+        <a href="{% static 'Images/5.jpg' %}" data-lightbox="gallery" data-title="Image 5">
+            <img class="gallery-image" src="{% static 'Images/5.jpg' %}" alt="Image 5">
+        </a>
+
+        <a href="{% static 'Images/6.jpg' %}" data-lightbox="gallery" data-title="Image 6">
+            <img class="gallery-image" src="{% static 'Images/6.jpg' %}" alt="Image 6">
+        </a>
+    </div>
+
+</div>
+
+<script src="{% static 'Lightbox/lightbox.min.js' %}"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 150,
+        'wrapAround': true
+    });
+</script>
+</body>
+</html>
+
